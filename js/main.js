@@ -1,16 +1,16 @@
 const headerItems = [
 	{
-		img: "png/pngwing.com (26).png",
+		img: "/RunZone/png/pngwing.com (26).png",
 		text: "Men Collection",
 		alt: "blue-black mens nike",
 	},
 	{
-		img: "zdj/shoes/women/newbalance.png",
+		img: "/RunZone/zdj/shoes/women/newbalance.png",
 		text: "Women Collection",
 		alt: "grey-green-white-pink womens new balance",
 	},
 	{
-		img: "zdj/shoes/kids/nike.png",
+		img: "/RunZone/zdj/shoes/kids/nike.png",
 		text: "Kids Collection",
 		alt: "green-pink-white-blue kids nike",
 	},
