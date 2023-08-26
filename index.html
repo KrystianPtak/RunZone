@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Discover our collection of athletic shoes that not only elevate your style but also enhance your comfort during physical activities. Add exceptional sports footwear to your cart and indulge in top-notch quality and design. Our shoes deliver unparalleled performance and durability, no matter your favorite sport. "
+		/>
+		<meta
+			name="keywords"
+			content="athletic shoes, performance, durability, design"
+		/>
+		<meta name="author" content="Krystian Ptak" />
+		<meta name="copyright" content="Krystian Ptak" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>RunZone</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script
+			src="https://kit.fontawesome.com/fdc09ecfc9.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="nav__body container">
+				<div class="nav__menu">
+					<div class="nav__open"><i class="fa-solid fa-bars"></i></div>
+					<div class="nav__close nav__hide">
+						<i class="fa-solid fa-xmark"></i>
+					</div>
+				</div>
+				<a href="#">
+					<div class="nav__logo">
+						<img src="img/logo.png" class="nav__logo-img" />
+						<p>RunZone</p>
+					</div>
+				</a>
+				<div class="nav__links">
+					<a class="nav__link" href="#">home</a>
+					<a class="nav__link" href="#shoes_id">products</a>
+					<a class="nav__link" href="#contact">contact</a>
+				</div>
+				<div class="nav__items">
+					<div class="nav__shop">
+						<a href="cart.html">
+							<i class="nav__basket fa-solid fa-basket-shopping">
+								<span class="nav__quantity"></span>
+							</i>
+						</a>
+						<span class="nav__total"></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="basket">
+			<p class="basket__message"></p>
+		</div>
+
+		<div class="cart__wrapper">
+			<table class="cart__table">
+				<tbody class="cart__table_tr"></tbody>
+			</table>
+			<p class="cart__total-price">Total:</p>
+		</div>
+
+		<header class="header">
+			<i class="header__arrow header__arrow-left fa-solid fa-chevron-left"></i>
+			<i class="header__arrow header__arrow-right fa-solid fa-chevron-right"></i
+			>>
+		</header>
+
+		<main>
+			<section class="collection">
+				<div class="collection__men">
+					<h3 class="collection__heading">Men Collection</h3>
+					<div class="collection__shadow">
+						<img
+							src="joseph-barrientos-4qSb_FWhHKs-unsplash (1).jpg"
+							alt="white mens nike with black badge"
+							class="collection__img"
+						/>
+					</div>
+					<a class="collection__btn" href="#shoes_id">explore more</a>
+				</div>
+				<div class="collection__women">
+					<h3 class="collection__heading">Women Collection</h3>
+					<div class="collection__shadow">
+						<img
+							src="hunter-johnson-czMy5rFeEbU-unsplash.jpg"
+							alt="pink-black-white womens nike"
+							class="collection__img"
+						/>
+					</div>
+					<a class="collection__btn" href="#shoes_id">explore more</a>
+				</div>
+				<div class="collection__kids">
+					<h3 class="collection__heading">Kids Collection</h3>
+					<div class="collection__shadow">
+						<img src="child.jpg" alt="white-black-green kids nike" class="collection__img" />
+					</div>
+					<a class="collection__btn" href="#shoes_id">explore more</a>
+				</div>
+			</section>
+
+			<h2 class="slider__heading">Bestsellers Products</h2>
+
+			<section class="slider">
+				<i class="slider__left fas fa-arrow-left"></i>
+				<div class="slider__gallery">
+				</div>
+				<i class="slider__right fas fa-arrow-right"></i>
+			</section>
+
+			<section class="shoes" id="shoes_id">
+				<h2 class="shoes__heading">Footwear Collection</h2>
+				<input
+					class="shoes__search-input"
+					type="search"
+					id="search-input"
+					placeholder="Wyszukaj produkt"
+				/>
+				<div class="shoes__body">
+					<button
+						class="shoes__filter-btn shoes__active shoes__filter-all"
+						data-category="All"
+					>
+						All
+					</button>
+					<button class="shoes__filter-btn shoes__filter-mwk" data-category="men">
+						Men
+					</button>
+					<button class="shoes__filter-btn shoes__filter-mwk" data-category="women">
+						Women
+					</button>
+					<button class="shoes__filter-btn shoes__filter-mwk" data-category="kids">
+						Kids
+					</button>
+					<i class="shoes__search-icon fa-solid fa-magnifying-glass"></i>
+				</div>
+				<div
+					class="product-section__products shoes__products"
+				></div>
+				<button class="product__view-more"></button>
+			</section>
+
+			<div class="product__bgc">
+				<div class="product"></div>
+			</div>
+
+			<section class="offer">
+				<div class="offer__body container">
+					<div class="offer__content container">
+						<p class="offer__heading">SPECIAL OFFER</p>
+						<p class="offer__title">UPTO 70% OFF</p>
+						<p class="offer__text">
+							Upgrade your footwear collection with our 70% off special deal! Grab stylish shoes now and save big.
+						</p>
+						<a href="#shoes_id" class="offer__link">SHOP NOW</a>
+					</div>
+					<img src="zdj/shoes/kids/nike.png" alt="green-pink-white-blue kids nike" class="offer__img" />
+				</div>
+			</section>
+
+			<section class="service">
+				<div class="service__content container">
+					<div class="service__box">
+						<img src="img/truck-delivery.png" alt="delivery truck icon" class="service__img service__truck" />
+						<div class="service__text">
+							<h5 class="service__title">FREE SHIPING</h5>
+							<p class="service__describe">All orders over $150</p>
+						</div>
+					</div>
+					<div class="service__box">
+						<img src="img/credit-card.png" alt="credit cart icon" class="service__img" />
+						<div class="service__text">
+							<h5 class="service__title">QUICK PAYMENT</h5>
+							<p class="service__describe">100% secure payment</p>
+						</div>
+					</div>
+					<div class="service__box">
+						<img src="img/receipt-refund.png" alt="return arrow icon" class="service__img service__return" />
+						<div class="service__text">
+							<h5 class="service__title">FREE RETURNS</h5>
+							<p class="service__describe">Money back in 30 days</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact" id="contact">
+				<div class="contact__body container">
+					<div class="contact__logo">
+						<a href="#">
+							<div class="contact__logo-title">
+									<img src="img/logo.png" class="contact__logo-img" />
+									<p>RunZone</p>
+							</div>
+						</a>
+						<p class="contact__logo-text">
+							Explore our shoe collection for every style and comfort you desire.
+						</p>
+					</div>
+					<div class="contact__media">
+						<p class="contact__media-title">follow us on__</p>
+						<div>
+							<i class="contact__media-icon fa-brands fa-facebook"></i>
+							<i class="contact__media-icon fa-brands fa-instagram"></i>
+							<i class="contact__media-icon fa-brands fa-x-twitter"></i>
+						</div>
+					</div>
+					<div class="contact__content">
+						<p class="contact__content-title">Contact Us</p>
+						<a
+						class="contact__content-icons"
+						href="https://goo.gl/maps/1JDQsq28KFfbreKc8" target="_blank"
+						><i class="contact__content-icon fa-solid fa-location-dot"></i
+						>94 Naxxar Road, Malta</a
+					>
+					<a class="contact__content-icons" href="mailto:runzone@gmail.com"
+						><i class="contact__content-icon fa-solid fa-envelope"></i
+						>runzone@gmail.com</a
+					>
+						<p class="contact__message-mail">Email has been copied</p>
+						<a class="contact__content-icons" href="tel:911234567890"
+							><i class="contact__content-icon fa-solid fa-phone"></i
+							>+91-1234567890</a
+						>
+						<p class="contact__message-tel"></p>
+						<span class="contact__content-icons contact__content-open"
+							><i class="contact__content-icon fa-solid fa-clock"></i>Mon-Sat
+							10:00pm - 7:00pm</span
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p class="footer__text">
+				© <span class="footer__date"></span> All rights reserved.
+			</p>
+		</footer>
+
+		<div class="cookie">
+			<div class="cookie__box container">
+				<p class="cookie__title">
+					<span class="cookie__img">🍪</span> We use cookie filles
+				</p>
+				<div class="cookie__content">
+					<p class="cookie__text">
+						This website uses cookies to enhance your browsing experience. By
+						clicking "Accept," you consent to their use. For more information,
+						please refer to our Privacy Policy.
+					</p>
+					<button class="cookie__btn">Accept</button>
+				</div>
+			</div>
+		</div>
+
+	<script src="js/footer.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/cart.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/modal.js"></script>
+	</body>
+</html>
