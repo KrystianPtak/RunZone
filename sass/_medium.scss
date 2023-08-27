@@ -133,8 +133,14 @@
 			margin-bottom: 2em;
 		}
 
+		&__content {
+			&:hover .slider__img {
+				transform: scale(1.07);
+			}
+		}
+
 		&__img {
-			transition: transform 0.5s;
+			transition: transform 0.5s ease;
 		}
 
 		&__btn {
@@ -228,6 +234,11 @@
 
 		&__link {
 			padding: 0.7em 2em;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: #ac7d26;
+			}
 		}
 	}
 
@@ -337,6 +348,11 @@
 				color: #f9fafa;
 				border: 1px solid transparent;
 			}
+		}
+
+		&__zoom {
+			cursor: zoom-in;
+			transform: scale(2);
 		}
 	}
 

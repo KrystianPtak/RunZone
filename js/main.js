@@ -1,16 +1,16 @@
 const headerItems = [
 	{
-		img: "/RunZone/png/pngwing.com (26).png",
+		img: "png/pngwing.com (26).png",
 		text: "Men Collection",
 		alt: "blue-black mens nike",
 	},
 	{
-		img: "/RunZone/zdj/shoes/women/newbalance.png",
+		img: "zdj/shoes/women/newbalance.png",
 		text: "Women Collection",
 		alt: "grey-green-white-pink womens new balance",
 	},
 	{
-		img: "/RunZone/zdj/shoes/kids/nike.png",
+		img: "zdj/shoes/kids/nike.png",
 		text: "Kids Collection",
 		alt: "green-pink-white-blue kids nike",
 	},
@@ -49,7 +49,6 @@ const showSlide = (slideIndex) => {
 };
 renderHeader();
 showSlide(currentSlideIndex);
-
 
 const slides = document.querySelectorAll(".header__slide");
 const leftBtn = document.querySelector(".header__arrow-left");
@@ -176,8 +175,6 @@ productViewMore.addEventListener("click", () => {
 	});
 
 	ViewMoreBtn();
-
-	
 });
 
 const FilterAll = document.querySelector(".shoes__filter-all");
