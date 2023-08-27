@@ -110,18 +110,18 @@ document
 		}, 500);
 	});
 
-// const interval = setInterval(() => {
-// 	const moveElement = document.querySelectorAll(".header__content");
-// 		moveElement.forEach((el) => {
-// 			el.classList.add("move-enter");
-// 		});
-// 		setTimeout(() => {
-// 			moveElement.forEach((el) => {
-// 				el.classList.remove("move-enter");
-// 			});
-// 		}, 500);
-// 	changeSlide(1);
-// }, 5000);
+const interval = setInterval(() => {
+	const moveElement = document.querySelectorAll(".header__content");
+		moveElement.forEach((el) => {
+			el.classList.add("move-enter");
+		});
+		setTimeout(() => {
+			moveElement.forEach((el) => {
+				el.classList.remove("move-enter");
+			});
+		}, 500);
+	changeSlide(1);
+}, 5000);
 
 const productsContainer = document.querySelector(".shoes__products");
 
