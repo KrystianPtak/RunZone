@@ -1,4 +1,4 @@
-# RunZone
+# krystianptak.pl/RunZone
 Project Description: Shoe Store
 
 This project is an online shoe store where I focus on using various JavaScript features to provide users not only with an appealing appearance but also an intuitive and interactive shopping experience. Here are the key features of the project:
