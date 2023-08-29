@@ -3,6 +3,8 @@ Project Description: Shoe Store
 
 This project is an online shoe store where I focus on using various JavaScript features to provide users not only with an appealing appearance but also an intuitive and interactive shopping experience. Here are the key features of the project:
 
+Impressive Performance and Optimal Practices: I would like to start by highlighting the outstanding success of this project. After conducting thorough tests using the Lighthouse Console tool and performing an in-depth website analysis, the results were truly impressive. All key performance indicators related to performance, accessibility, and best SEO practices are looking remarkable, nearing perfection at nearly 100%. I've attached an image showcasing these exceptional results for your reference.
+
 Responsive Design: The design of the project is made responsive, meaning that the webpage adapts to different screen sizes, ensuring optimal display on computers, tablets, and smartphones.
 
 Image Slider: The homepage features an image slider that automatically changes backgrounds every 5 seconds, showcasing different images with accompanying text. Users can also manually navigate the slider using arrow buttons.
