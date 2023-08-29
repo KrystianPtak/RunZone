@@ -15,7 +15,7 @@ Search Function: In the shoe collection section, users can use a magnifying glas
 
 Quick View: The "Quick View" button allows users to preview detailed product information in a modal format. Hovering over an image also provides a zoomed-in view of the product.
 
-Add to Cart: Each product has an "Add to Cart" button, allowing users to add items to their cart. After adding, users receive confirmation, and the quantity and total price of items in the cart are updated. Cart items persist even after refreshing the page or leaving the site, enhancing shopping convenience and comfort.
+Add to Cart: Each product has an "Add to Cart" button, allowing users to add items to their cart. After adding, users receive confirmation, and the quantity and total price of items in the cart are updated. 
 
 Persistent Cart: Items added to the cart remain even after refreshing the page or leaving the site, enhancing shopping convenience and comfort.
 
