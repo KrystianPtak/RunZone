@@ -302,6 +302,7 @@ body {
   background-color: #d5e6eb;
   display: flex;
   flex-direction: column;
+  justify-content: end;
 }
 .slider__img {
   padding: 4em 0 2em;
@@ -332,7 +333,7 @@ body {
   color: #ffffff;
 }
 .slider__left, .slider__right {
-  display: none;
+  visibility: hidden;
 }
 
 .shoes {
@@ -493,7 +494,7 @@ body {
   background-color: #0d464a;
 }
 .product__icon {
-  display: none;
+  visibility: hidden;
 }
 .product__img {
   width: 100%;
@@ -950,7 +951,7 @@ ul {
     transform: scale(1.07);
   }
   .slider__img {
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease-in;
   }
   .slider__btn {
     cursor: pointer;
@@ -959,7 +960,7 @@ ul {
     background-color: #0d464a;
   }
   .slider__left, .slider__right {
-    display: block;
+    visibility: visible;
     font-size: 2rem;
     padding-right: 0.7em;
     cursor: pointer;
@@ -1102,7 +1103,7 @@ ul {
     height: 350px;
   }
   .product__icon {
-    display: block;
+    visibility: visible;
     position: absolute;
     right: 5px;
     padding: 0.2em;

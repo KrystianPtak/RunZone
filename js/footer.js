@@ -11,6 +11,14 @@ const openNav = () => {
 };
 navMenu.addEventListener("click", openNav);
 
+navLink.forEach((link) => {
+	link.addEventListener("click", () => {
+		navLinks.classList.toggle("nav__links-active");
+		navOpen.classList.toggle("nav__hide");
+		navClose.classList.toggle("nav__hide");
+	});
+});
+
 const contactLinks = document.querySelectorAll(
 	'a[href^="mailto:"], a[href^="tel:"]'
 );

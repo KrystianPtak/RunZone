@@ -276,6 +276,8 @@ body {
 		background-color: #d5e6eb;
 		display: flex;
 		flex-direction: column;
+		justify-content: end;
+	
 	}
 
 	&__img {
@@ -310,7 +312,7 @@ body {
 
 	&__left,
 	&__right {
-		display: none;
+		visibility: hidden;
 	}
 }
 
@@ -487,7 +489,7 @@ body {
 	}
 
 	&__icon {
-		display: none;
+		visibility: hidden;
 	}
 
 	&__img {
