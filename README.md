@@ -23,10 +23,10 @@ Cart Icon: Leads users to the cart page, where they can manage the cart's conten
 
 Order and Payment: The "Checkout" button enables users to proceed to the ordering process. If the cart is empty, a message is displayed. Filling in missing fields is required before placing an order.
 
+Cart and Card Clearing: After completing purchases, the cart and card are cleared using the setTimeout function.
+
 Contact and Map: The contact section includes the store's location. Clicking opens a map with the store's location.
 
 Email and Phone Interaction: Clicking on the email address or phone number on mobile devices opens the respective application. On desktop, copying content to the clipboard is possible.
-
-Cart and Card Clearing: After completing purchases, the cart and card are cleared using the setTimeout function.
 
 Cookies Usage: The store employs cookies to remember user preferences. After accepting cookies, the notification will no longer appear.
