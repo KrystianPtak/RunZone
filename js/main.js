@@ -1,6 +1,6 @@
 const headerItems = [
 	{
-		img: "img/nike_header.png",
+		img: "img/nike_header.webp",
 		text: "Men Collection",
 		alt: "blue-black mens nike",
 	},
