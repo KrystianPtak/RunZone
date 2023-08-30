@@ -47,3 +47,7 @@ Clicking on the email address or phone number on mobile devices opens the respec
 
 ## **Cookies Usage**
 The store employs cookies to remember user preferences. After accepting cookies, the notification will no longer appear.
+
+<p align="center">
+<img src="lighthouse.png">
+</p>
