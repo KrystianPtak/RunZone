@@ -286,7 +286,6 @@ body {
 
 	&__details {
 		@include flexCenter(column);
-		z-index: 999;
 		background-color: #d5e6eb;
 	}
 
