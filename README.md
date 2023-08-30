@@ -10,7 +10,7 @@ I would like to start by highlighting the outstanding success of this project. A
 The design of the project is made responsive, meaning that the webpage adapts to different screen sizes, ensuring optimal display on computers, tablets, and smartphones.
 
 ## **Image Slider**
-The homepage features an image slider that automatically changes backgrounds every 5 seconds, showcasing different images with accompanying text. Users can also manually navigate the slider using arrow buttons.
+The homepage displays an image slider with various images and accompanying text. Users can navigate through the slider manually using arrow buttons.
 
 ## **Bestsellers**
 A second slider presents the bestselling products. By clicking the arrows, users can browse through various products.
