@@ -5,12 +5,12 @@ const headerItems = [
 		alt: "blue-black mens nike",
 	},
 	{
-		img: "img/shoes/women/newbalance.png",
+		img: "img/shoes/women/newbalance.webp",
 		text: "Women Collection",
 		alt: "grey-green-white-pink womens new balance",
 	},
 	{
-		img: "img/shoes/kids/nike.png",
+		img: "img/shoes/kids/nike.webp",
 		text: "Kids Collection",
 		alt: "green-pink-white-blue kids nike",
 	},
@@ -82,8 +82,10 @@ function setActiveSlide() {
 
 const slideContainer = document.querySelector(".slider__gallery");
 
-const BestsellersId = [8,10,12,16,7,14,11]
-const Bestsellers = modalProduct.filter((element) => BestsellersId.includes(element.id));
+const BestsellersId = [8, 10, 12, 16, 7, 14, 11];
+const Bestsellers = modalProduct.filter((element) =>
+	BestsellersId.includes(element.id)
+);
 
 const renderSlider = () => {
 	Bestsellers.forEach((slider) => {
@@ -98,7 +100,7 @@ const renderSlider = () => {
 				<div class="slider__details">
 					<h3 class="slider__title">${slider.title}</h3>
 					<p class="slider__price">$${slider.price}</p>
-					<a class="slider__btn" onclick='addToCart(${slider.id})'>add to cart</a>
+					<button class="slider__btn" onclick='addToCart(${slider.id})'>add to cart</button>
 				</div>
 			</div>
 		</div>	

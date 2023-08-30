@@ -130,7 +130,7 @@ body {
 		gap: 4em;
 		height: 100vh;
 		background-blend-mode: darken;
-		background: url("/RunZone/img/header_background.jpg") rgba(0, 0, 0, 0.7);
+		background: url("/RunZone/img/header_background.webp") rgba(0, 0, 0, 0.7);
 	}
 
 	&__active {
@@ -381,6 +381,7 @@ body {
 		object-fit: cover;
 		background-color: #f7f4f4;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		color: #000;
 	}
 
 	&__img-box {
@@ -592,7 +593,7 @@ body {
 	&__btn {
 		display: block;
 		padding: 0.7em 1.7em;
-		background-color: #bb892d;
+		background-color: #bb9b32;
 		border-radius: 20px;
 		color: $white;
 	}
