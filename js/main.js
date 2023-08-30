@@ -1,16 +1,16 @@
 const headerItems = [
 	{
-		img: "/RunZone/png/pngwing.com (26).png",
+		img: "img/nike_header.png",
 		text: "Men Collection",
 		alt: "blue-black mens nike",
 	},
 	{
-		img: "/RunZone/zdj/shoes/women/newbalance.png",
+		img: "img/shoes/women/newbalance.png",
 		text: "Women Collection",
 		alt: "grey-green-white-pink womens new balance",
 	},
 	{
-		img: "/RunZone/zdj/shoes/kids/nike.png",
+		img: "img/shoes/kids/nike.png",
 		text: "Kids Collection",
 		alt: "green-pink-white-blue kids nike",
 	},
@@ -75,53 +75,37 @@ function changeSlide(direction) {
 	setActiveSlide();
 }
 
-const activeShoe = document.querySelectorAll(".header__shoe");
-
 function setActiveSlide() {
 	slides.forEach((slide) => slide.classList.remove("header__active"));
 	slides[activeSlide].classList.add("header__active");
 }
 
-document
-	.querySelector(".header__arrow-right")
-	.addEventListener("click", function () {
-		const moveElement = document.querySelectorAll(".header__content");
-		moveElement.forEach((el) => {
-			el.classList.add("move-enter");
-		});
-		setTimeout(() => {
-			moveElement.forEach((el) => {
-				el.classList.remove("move-enter");
-			});
-		}, 500);
-	});
+const slideContainer = document.querySelector(".slider__gallery");
 
-document
-	.querySelector(".header__arrow-left")
-	.addEventListener("click", function () {
-		const moveElement = document.querySelectorAll(".header__content");
-		moveElement.forEach((el) => {
-			el.classList.add("move-enter");
-		});
-		setTimeout(() => {
-			moveElement.forEach((el) => {
-				el.classList.remove("move-enter");
-			});
-		}, 500);
-	});
+const BestsellersId = [8,10,12,16,7,14,11]
+const Bestsellers = modalProduct.filter((element) => BestsellersId.includes(element.id));
 
-const interval = setInterval(() => {
-	const moveElement = document.querySelectorAll(".header__content");
-		moveElement.forEach((el) => {
-			el.classList.add("move-enter");
-		});
-		setTimeout(() => {
-			moveElement.forEach((el) => {
-				el.classList.remove("move-enter");
-			});
-		}, 500);
-	changeSlide(1);
-}, 5000);
+const renderSlider = () => {
+	Bestsellers.forEach((slider) => {
+		slideContainer.innerHTML += `
+		<div class="slider__box">
+			<div class="slider__content">
+				<img
+					src="${slider.img}"
+					alt="${slider.alt}"
+					class="slider__img"
+				/>
+				<div class="slider__details">
+					<h3 class="slider__title">${slider.title}</h3>
+					<p class="slider__price">$${slider.price}</p>
+					<a class="slider__btn" onclick='addToCart(${slider.id})'>add to cart</a>
+				</div>
+			</div>
+		</div>	
+		`;
+	});
+};
+renderSlider();
 
 const productsContainer = document.querySelector(".shoes__products");
 
@@ -258,30 +242,6 @@ function handleSearch(searchInput, products) {
 	});
 }
 handleSearch(searchInput, products);
-
-const slideContainer = document.querySelector(".slider__gallery");
-
-const renderSlider = () => {
-	modalProduct.forEach((slider) => {
-		slideContainer.innerHTML += `
-		<div class="slider__box">
-			<div class="slider__content">
-				<img
-					src="${slider.img}"
-					alt="${slider.alt}"
-					class="slider__img"
-				/>
-				<div class="slider__details">
-					<h3 class="slider__title">${slider.title}</h3>
-					<p class="slider__price">$${slider.price}</p>
-					<a class="slider__btn" onclick='addToCart(${slider.id})'>add to cart</a>
-				</div>
-			</div>
-		</div>	
-		`;
-	});
-};
-renderSlider();
 
 const cookieBox = document.querySelector(".cookie");
 const cookieBtn = document.querySelector(".cookie__btn");

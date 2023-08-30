@@ -158,8 +158,7 @@ body {
   position: absolute;
   width: 100%;
   opacity: 0;
-  transition: 1.6s ease;
-  z-index: 1;
+  transition: opacity 1.5s ease;
 }
 .header__img {
   display: flex;
@@ -169,10 +168,11 @@ body {
   gap: 4em;
   height: 100vh;
   background-blend-mode: darken;
-  background: url("/RunZone/zdj/pexels-tim-mossholder-1764702.jpg") rgba(0, 0, 0, 0.7);
+  background: url("/img/header_background.jpg") rgba(0, 0, 0, 0.7);
 }
 .header__active {
   opacity: 1;
+  z-index: 2;
 }
 .header__content {
   display: flex;
@@ -587,7 +587,7 @@ body {
   text-align: center;
   color: #ffffff;
 }
-.offer__link {
+.offer__btn {
   display: block;
   padding: 0.7em 1.7em;
   background-color: #bb892d;
@@ -893,6 +893,24 @@ ul {
   .header__text {
     font-size: 4.5rem;
   }
+  .header__btn {
+    position: relative;
+    overflow: hidden;
+  }
+  .header__btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: none;
+  }
+  .header__btn:hover:after {
+    left: 100%;
+    transition: 0.8s;
+  }
   .header__arrow {
     opacity: 0;
     transition: 0.6s;
@@ -928,15 +946,6 @@ ul {
   .collection__btn:hover:after {
     left: 100%;
     transition: 0.8s;
-  }
-  .move {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.4s ease, transform 0.8s ease;
-  }
-  .move-enter {
-    opacity: 0;
-    transform: translateY(100%);
   }
   .slider {
     padding: 4em 0;
@@ -1048,11 +1057,11 @@ ul {
     max-width: 400px;
     text-align: start;
   }
-  .offer__link {
+  .offer__btn {
     padding: 0.7em 2em;
     transition: background-color 0.3s ease;
   }
-  .offer__link:hover {
+  .offer__btn:hover {
     background-color: #ac7d26;
   }
   .service {
@@ -1123,11 +1132,23 @@ ul {
     color: #ffffff;
   }
   .product__button {
-    transition: background-color 0.3s ease;
-  }
-  .product__button:hover {
-    background-color: #0d464a;
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
+  }
+  .product__button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: none;
+  }
+  .product__button:hover:after {
+    left: 100%;
+    transition: 0.8s;
   }
   .product__view-more {
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;

@@ -81,6 +81,12 @@
 			font-size: 4.5rem;
 		}
 
+		&__btn{
+			position: relative;
+			overflow: hidden;
+			@include glassHover;
+		}
+
 		&__arrow {
 			opacity: 0;
 			transition: 0.6s;
@@ -109,17 +115,6 @@
 			transition: 0.4s;
 			overflow: hidden;
 		}
-	}
-
-	.move {
-		opacity: 1;
-		transform: translateY(0);
-		transition: opacity 0.4s ease, transform 0.8s ease;
-	}
-
-	.move-enter {
-		opacity: 0;
-		transform: translateY(100%);
 	}
 
 	.slider {
@@ -232,7 +227,7 @@
 			text-align: start;
 		}
 
-		&__link {
+		&__btn {
 			padding: 0.7em 2em;
 			transition: background-color 0.3s ease;
 
@@ -333,11 +328,11 @@
 		}
 
 		&__button {
-			transition: background-color 0.3s ease;
-			&:hover {
-				background-color: #0d464a;
-				cursor: pointer;
-			}
+			position: relative;
+			overflow: hidden;
+			@include glassHover;
+			cursor: pointer;
+
 		}
 
 		&__view-more {
