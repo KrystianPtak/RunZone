@@ -57,7 +57,7 @@ body {
   position: fixed;
   width: 100%;
   height: 8vh;
-  z-index: 99999;
+  z-index: 10;
   background-color: rgb(19, 19, 19);
   color: #ffffff;
 }
@@ -87,7 +87,7 @@ body {
   background-color: rgb(21, 96, 99);
   transition: transform 0.3s ease;
   transform: translateX(-100%);
-  z-index: 999;
+  z-index: 10;
 }
 .nav__links-active {
   transform: translateX(0);
@@ -136,7 +136,7 @@ body {
   padding: 1em 3em;
   background-color: #d4d7d8;
   transform: translateX(100%);
-  z-index: 9999;
+  z-index: 10;
   transition: 0.3s;
 }
 .basket__active {
