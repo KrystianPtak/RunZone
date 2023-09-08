@@ -458,7 +458,7 @@ body {
   display: none;
   animation: fade 0.5s 0.5s backwards;
 }
-.shoes__active {
+.shoes__active_fade {
   display: flex;
   animation: fade 0.5s forwards;
 }

@@ -157,7 +157,7 @@ productViewMore.addEventListener("click", () => {
 		setTimeout(() => {
 			el.classList.toggle("shoes__hide");
 		}, 500);
-		el.classList.toggle("shoes__active");
+		el.classList.toggle("shoes__active_fade");
 	});
 
 	ViewMoreBtn();
@@ -179,7 +179,7 @@ Filters.forEach((el) => {
 		productViewMore.style.display = "none";
 		productsVisible.forEach((el) => {
 			el.classList.remove("shoes__hide");
-			el.classList.remove("shoes__active");
+			el.classList.remove("shoes__active_fade");
 		});
 	});
 });

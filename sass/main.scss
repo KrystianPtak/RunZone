@@ -448,7 +448,7 @@ body {
 		animation: fade 0.5s 0.5s backwards;
 	}
 
-	&__active {
+	&__active_fade {
 		display: flex;
 		animation: fade 0.5s forwards;
 	}
